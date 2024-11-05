@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-rows: 8% 92%;
+  height: 100vh;
+}
+
+.navbar {
+  width: 100vw;
+  background-image: linear-gradient(to right, #123E73, #54AA4F); 
+}
+
+.content {
+  width: 100vw;
+}
