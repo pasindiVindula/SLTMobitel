@@ -8,7 +8,7 @@ import {
   DropdownItem,
   Button,
 } from "@nextui-org/react";
-import { ChevronDown } from "../icons/page";
+import { ChevronDown } from "../icons/ChevronDown";
 
 export default function DropDown() {
   const [selectedKeys, setSelectedKeys] = React.useState(new Set(["English"]));
