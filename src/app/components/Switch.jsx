@@ -1,8 +1,8 @@
 'use client'
 
 import {Switch} from "@nextui-org/react";
-import {MoonIcon} from "../icons/MoonIcon";
-import {SunIcon} from "../icons/SunIcon";
+import {MoonIcon} from "./icons/MoonIcon";
+import {SunIcon} from "./icons/SunIcon";
 
 export default function SwitchMode() {
   return (

@@ -1,7 +1,7 @@
 import { Navbar, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import { Image } from "@nextui-org/image";
-import DropDown from "../dropdown/NavbarDropdown";
-import SwitchMode from "../switch/page";
+import DropDown from "./dropdown/NavbarDropdown";
+import SwitchMode from "./Switch";
 
 export default function TopBar() {
   return (
