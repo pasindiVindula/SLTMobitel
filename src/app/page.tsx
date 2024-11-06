@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React from "react";
 import styles from "./home.module.css";
@@ -63,6 +63,16 @@ export default function Home() {
         "Enhance the productivity and value of your business with the our latest and innovative ICT products and solutions",
     },
   ];
+
+  const icons = [
+    { iconUrl: '/images/compass.png', label: 'Explore' },
+    { iconUrl: '/images/person.png', label: 'Personal' },
+    { iconUrl: '/images/bag.png', label: 'Business' },
+    { iconUrl: '/images/entertainment.png', label: 'Entertainment' },
+    { iconUrl: '/images/shop.png', label: 'Shop' },
+    { iconUrl: '/images/heart.png', label: 'E-Channeling' },
+  ];
+  
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -70,7 +80,7 @@ export default function Home() {
       </div>
       <div className={styles.content}>
         <div className="relative">
-          <BannerSlider images={images} />
+          <BannerSlider images={images} icons={icons} />
         </div>
       </div>
     </div>
