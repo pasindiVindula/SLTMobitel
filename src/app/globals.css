@@ -54,3 +54,34 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-track > *:not(:last-child) {
+  margin-right: 24px !important;
+}
+
+.banner-slider .slick-track > *:not(:last-child) {
+  margin-right: 0px !important;
+}
+@media (max-width: 600px) {
+  .slick-track > *:not(:last-child) {
+    margin-right: 16px !important;
+  }
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+.slick-dots li {
+  margin: 0 !important;
+}
+.slick-dots li button {
+  color: #dddddd !important;
+  padding: 4px !important;
+}
+.slick-dots li button:before {
+  font-size: 8px !important;
+}
