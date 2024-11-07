@@ -45,9 +45,9 @@ export default function BannerSlider({ images, icons }: ImageSliderType) {
                 <img
                   src={icon.iconUrl}
                   alt={icon.label}
-                  className="w-12 h-12"
+                  className="w-8 h-8"
                 />
-                <span className="text-sm">{icon.label}</span>
+                <span className="text-sm pt-2">{icon.label}</span>
               </div>
             );
           })}

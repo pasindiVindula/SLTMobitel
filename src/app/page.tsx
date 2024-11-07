@@ -1,9 +1,12 @@
-'use client'
+"use client";
 
 import React from "react";
 import styles from "./home.module.css";
 import Navbar from "./components/Navbar";
 import dynamic from "next/dynamic";
+import { Bottom } from "./components/Bottom";
+import Feedback from "./components/card/feedback";
+import QuickLinks from "./components/QuickLinks";
 
 const BannerSlider = dynamic(() => import("./components/Carosuel"), {
   ssr: false,
@@ -65,14 +68,14 @@ export default function Home() {
   ];
 
   const icons = [
-    { iconUrl: '/images/compass.png', label: 'Explore' },
-    { iconUrl: '/images/person.png', label: 'Personal' },
-    { iconUrl: '/images/bag.png', label: 'Business' },
-    { iconUrl: '/images/entertainment.png', label: 'Entertainment' },
-    { iconUrl: '/images/shop.png', label: 'Shop' },
-    { iconUrl: '/images/heart.png', label: 'E-Channeling' },
+    { iconUrl: "/images/compass.png", label: "Explore" },
+    { iconUrl: "/images/person.png", label: "Personal" },
+    { iconUrl: "/images/bag.png", label: "Business" },
+    { iconUrl: "/images/entertainment.png", label: "Entertainment" },
+    { iconUrl: "/images/shop.png", label: "Shop" },
+    { iconUrl: "/images/heart.png", label: "E-Channeling" },
   ];
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
@@ -81,6 +84,9 @@ export default function Home() {
       <div className={styles.content}>
         <div className="relative">
           <BannerSlider images={images} icons={icons} />
+          <QuickLinks/>
+          <Feedback />
+          <Bottom />
         </div>
       </div>
     </div>

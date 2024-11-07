@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
+import { Card, Image, Button } from "@nextui-org/react";
 
 export default function App() {
   return (
