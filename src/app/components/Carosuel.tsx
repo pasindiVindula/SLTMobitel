@@ -85,7 +85,7 @@ export default function BannerSlider({ images, icons }: ImageSliderType) {
                   </div>
                 )}
                 {image.label && (
-                  <Button radius="full" className="bg-[#1055A7] text-white">
+                  <Button radius="full" className="bg-[#1055A7] text-white px-10">
                     {image.label}
                   </Button>
                 )}

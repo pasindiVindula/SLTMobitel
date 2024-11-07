@@ -5,9 +5,9 @@ import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
 export function Bottom() {
   return (
-    <Footer bgDark>
+    <Footer className="bg-[#283851] rounded-none">
       <div className="w-full">
-        <div className="grid w-full gap-10 pl-32 py-16 lg:grid-cols-5">
+        <div className="grid w-full pl-32 py-16 xl:grid-cols-5">
           <div>
             <Footer.Title title="About Us" className="text-[#C8E1FF]"/>
             <Footer.LinkGroup col className="text-white text-xs">
@@ -67,6 +67,8 @@ export function Bottom() {
               <Footer.Link href="#">Visiting Sri Lanka</Footer.Link>
             </Footer.LinkGroup>
           </div>
+          <div></div>
+          <div></div>
           <div>
             <Footer.Title title="SUSTAINABILITY" className="text-[#C8E1FF]"/>
             <Footer.LinkGroup col className="text-white text-xs">

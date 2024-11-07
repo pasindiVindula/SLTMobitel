@@ -28,7 +28,7 @@ export default function App() {
             <span className="mt-2 text-sm text-custom-blue">{item.label}</span>
           </div>
         ))}
-        <Button radius="full" className="mt-4 bg-[#1055A7] text-white">
+        <Button radius="full" className="mt-4 bg-[#1055A7] text-white px-4">
           Pay Your Bill or Reload
         </Button>
       </CardBody>
