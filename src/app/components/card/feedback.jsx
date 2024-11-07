@@ -2,7 +2,8 @@ import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 
 export default function App() {
   return (
-    <Card className="bg-[#283851] rounded-none">
+    <Card className="relative bg-[#283851] rounded-none">
+        <div className="absolute inset-0 bg-black bg-opacity-10 z-0"></div>
       <div className="flex items-center justify-center space-x-6 px-4">
         <Image
           alt="Feedback Image"

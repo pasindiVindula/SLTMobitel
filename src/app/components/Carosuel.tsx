@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@nextui-org/react";
-import IconCard from "./card/iconcard"
+import IconCard from "./card/iconcard";
 
 export interface ImageSliderType {
   images: {
@@ -17,13 +17,9 @@ export interface ImageSliderType {
   }[];
 
   icons: {
-    icon1: string;
-    icon2: string;
-    icon3: string;
-    icon4: string;
-    icon5: string;
-    icon6: string;
-  };
+    iconUrl: string;
+    label: string;
+  }[];
 }
 
 export default function BannerSlider({ images, icons }: ImageSliderType) {
@@ -48,11 +44,10 @@ export default function BannerSlider({ images, icons }: ImageSliderType) {
               <div key={index} className="flex flex-col items-center">
                 <img
                   src={icon.iconUrl}
-                  alt={`icon-${index + 1}`}
-                  className="w-8 h-8"
+                  alt={icon.label}
+                  className="w-12 h-12"
                 />
-                <span className="mt-2 text-sm">{icon.label}</span>{" "}
-                {/* Display the label under the icon */}
+                <span className="text-sm">{icon.label}</span>
               </div>
             );
           })}
@@ -85,14 +80,17 @@ export default function BannerSlider({ images, icons }: ImageSliderType) {
                   </div>
                 )}
                 {image.label && (
-                  <Button radius="full" className="bg-[#1055A7] text-white px-10">
+                  <Button
+                    radius="full"
+                    className="bg-[#1055A7] text-white px-10"
+                  >
                     {image.label}
                   </Button>
                 )}
               </div>
             </div>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 flex flex-col items-center space-y-4">
-              <IconCard/>
+              <IconCard />
             </div>
           </div>
         ))}
