@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@nextui-org/react";
+import IconCard from "./card/details"
 
 export interface ImageSliderType {
   images: {
@@ -89,6 +90,9 @@ export default function BannerSlider({ images, icons }: ImageSliderType) {
                   </Button>
                 )}
               </div>
+            </div>
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 flex flex-col items-center space-y-4">
+              <IconCard/>
             </div>
           </div>
         ))}

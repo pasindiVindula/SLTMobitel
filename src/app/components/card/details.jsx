@@ -1,22 +1,37 @@
-import {Card, CardHeader, CardBody, Button, CardFooter} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image, Button } from "@nextui-org/react";
 
 export default function App() {
   return (
-    <div className="w-1/3">
-        <Card className="py-4">
-      <CardHeader className="pb-0 pt-4flex-col items-start">
-        <h4 className="font-bold text-4xl pb-4 pl-4">Mobitel Offers Banner</h4>
-      </CardHeader>
-      <CardBody className="overflow-visible py-2">
-      <p className="text-tiny pl-4">Lörem ipsum laktigt vaska. Ott neresamma ifall fyning. Diheten pseudotion. Hotelljournalist ibel äns inte gåktiga i är. Preligen esk .</p>
-      </CardBody>
-      <CardFooter className="pl-8">
-      <Button className="text-white bg-blue-500" variant="flat" color="default" radius="lg" size="m">
-          Explore More
+    <Card className="py-4 bg-[#283851] mb-4">
+      {/* <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">Daily Mix</p>
+        <small className="text-default-500">12 Tracks</small>
+        <h4 className="font-bold text-large">Frontend Radio</h4>
+      </CardHeader> */}
+      
+      <CardBody className="overflow-visible py-4 flex flex-row items-center space-x-16 px-10">
+        {/* Multiple images with labels */}
+        {[
+          { src: "/images/Mobile Icon.png", label: "Mobile Plan" },
+          { src: "/images/fixed call.png", label: "Fixed Plans" },
+          { src: "/images/internet.png", label: "Internet" },
+          { src: "/images/PEOTV.png", label: "PEO TV" },
+        ].map((item, index) => (
+          <div key={index} className="flex flex-col items-center">
+            <Image
+              alt={`Icon ${index + 1}`}
+              className="object-cover rounded-xl"
+              src={item.src}
+              width={40}
+              height={40}
+            />
+            <span className="mt-2 text-sm text-custom-blue">{item.label}</span>
+          </div>
+        ))}
+        <Button radius="full" className="mt-4 bg-[#1055A7] text-white">
+          Pay Your Bill or Reload
         </Button>
-      </CardFooter>
+      </CardBody>
     </Card>
-    </div>
-    
   );
 }
