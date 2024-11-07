@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Button } from "@nextui-org/react";
-import IconCard from "./card/details"
+import IconCard from "./card/iconcard"
 
 export interface ImageSliderType {
   images: {
