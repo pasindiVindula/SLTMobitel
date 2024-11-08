@@ -1,7 +1,7 @@
 import { Card, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import Title from "./topic/title";
 
-export default function CardSection() {
+export default function Quicklinks() {
   const list = [
     {
       title: "eBill",
